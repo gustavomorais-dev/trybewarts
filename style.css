@@ -6,3 +6,20 @@
   box-sizing: border-box;
   font-family: Roboto, sans-serif;
 }
+
+.main-container {
+  background-color: blue;
+}
+
+.flex-container {
+  display: flex;
+}
+
+#evaluation-form {
+  width: 675px;
+  flex-direction: column;
+}
+
+#trybewarts-forms-logo {
+  height: 500px;
+}
