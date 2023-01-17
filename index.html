@@ -25,7 +25,18 @@
       <input id="input-name" type="text" placeholder="Nome">
       <input id="input-lastname" type="text" placeholder="Sobrenome">
       <input id="input-email" type="text" placeholder="Email">
-      <button type="submit">Enviar</button>
+
+      <!-- TEXT AREA -->
+      <div class="flex-container">
+        <label for="textarea" class="textarea">Deixe seu comentário:</label>
+        <textarea name="textarea" id="textarea" cols="30" rows="10" maxlength="500"></textarea>
+      </div>
+
+      <div>
+      <label id="label-infos" for="agreement">Você concorda com o uso das informações acima?</label>
+      <input type="checkbox" name="agreement" id="agreement">
+      </div>
+      <button type="submit" id="submit-btn">Enviar</button>
     </form>
     <img src="images/trybewarts-colored.svg" id="trybewarts-forms-logo">
   </main>
