@@ -1,6 +1,6 @@
 // Trybewarts JS
 // Variaveis
-const loginButton = document.querySelector('#login-button');
+const loginButton = document.getElementById('login-button');
 const agreement = document.getElementById('agreement');
 const submitButton = document.getElementById('submit-btn');
 
@@ -10,8 +10,8 @@ submitButton.disabled = true;
 // Funcoes
 // Login button HEADER
 loginButton.addEventListener('click', () => {
-  const loginEmail = document.querySelector('#login-email');
-  const loginPassword = document.querySelector('#login-password');
+  const loginEmail = document.getElementById('login-email');
+  const loginPassword = document.getElementById('login-password');
   if (loginEmail.value === 'tryber@teste.com' && loginPassword.value === '123456') {
     alert('Olá, Tryber!');
   } else {
