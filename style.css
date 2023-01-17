@@ -7,6 +7,24 @@
   font-family: Roboto, sans-serif;
 }
 
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(50, 167, 145);
+  width: 100%;
+}
+
+.trybewarts-header-logo {
+  width: 48px;
+  margin: 16px;
+}
+
+.trybewarts-login {
+  display: flex;
+  align-items: center;
+}
+
 .main-container {
   background-color: blue;
 }
@@ -23,3 +41,5 @@
 #trybewarts-forms-logo {
   height: 500px;
 }
+
+
