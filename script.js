@@ -2,12 +2,19 @@
 // Variaveis
 const loginButton = document.getElementById('login-button');
 const agreement = document.getElementById('agreement');
-const submitButton = document.getElementById('submit-btn');
+const submit = document.getElementById('submit-btn');
 
 // Desabilita o botão enviar
-submitButton.disabled = true;
+submit.disabled = true;
 
 // Funcoes
+const agreeCheck = () => {
+  if (agreement.checked) {
+    submit.disabled = false;
+  } else {
+    submit.disabled = true;
+  }
+};
 // Login button HEADER
 loginButton.addEventListener('click', () => {
   const loginEmail = document.getElementById('login-email');
@@ -20,6 +27,4 @@ loginButton.addEventListener('click', () => {
 });
 
 // Send button disable/enable
-agreement.addEventListener('click', () => {
-agreement.checked ? submitButton.disabled = false : submitButton.disabled = true;
-})
+agreement.addEventListener('click', agreeCheck);
