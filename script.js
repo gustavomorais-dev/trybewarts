@@ -82,6 +82,14 @@ const materias = () => {
 };
 
 const avaliacao = () => {
+  const getAvaliacao = document.getElementsByName('rate');
+  const paragrafo = document.createElement('p');
+  for (let index = 0; index < getAvaliacao.length; index += 1) {
+    if (getAvaliacao[index].checked) {
+      paragrafo.innerHTML = `Avaliação: ${getAvaliacao[index].value}`;
+    }
+  }
+  getData.appendChild(paragrafo);
 
 };
 
