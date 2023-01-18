@@ -5,6 +5,7 @@ const agreement = document.getElementById('agreement');
 const submit = document.getElementById('submit-btn');
 const getData = document.getElementById('form-data');
 const textArea = document.getElementById('textarea');
+const remainingCharacters = document.getElementById('counter');
 
 // Desabilita o botão enviar
 submit.disabled = true;
@@ -16,6 +17,11 @@ const agreeCheck = () => {
   } else {
     submit.disabled = true;
   }
+};
+// Contador de caracteres
+const refreshCounter = () => {
+  const remaining = 500 - textArea.value.length;
+  remainingCharacters.innerHTML = `${remaining}`;
 };
 // Login button HEADER
 loginButton.addEventListener('click', (event) => {
@@ -103,3 +109,6 @@ submit.addEventListener('click', (event) => {
 
 // Send button disable/enable
 agreement.addEventListener('click', agreeCheck);
+
+// TextArea Key Check
+textArea.addEventListener('keyup', refreshCounter);
