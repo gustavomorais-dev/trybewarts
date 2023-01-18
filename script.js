@@ -91,7 +91,6 @@ const avaliacao = () => {
     }
   }
   getData.appendChild(paragrafo);
-
 };
 
 const observacoes = () => {
