@@ -3,6 +3,7 @@
 const loginButton = document.getElementById('login-button');
 const agreement = document.getElementById('agreement');
 const submit = document.getElementById('submit-btn');
+const form = document.getElementById('evaluation-form');
 const getData = document.getElementById('form-data');
 const textArea = document.getElementById('textarea');
 const remainingCharacters = document.getElementById('counter');
@@ -108,6 +109,8 @@ const printData = () => {
   materias();
   avaliacao();
   observacoes();
+  form.style.display = 'none';
+  getData.style.display = 'inline-block';
 };
 
 submit.addEventListener('click', (event) => {
