@@ -7,12 +7,21 @@
   font-family: Roboto, sans-serif;
 }
 
+body {
+  background-color: #111;
+}
+
 .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: rgb(50, 167, 145);
+  background-color: #333;
   width: 100%;
+}
+
+h1 {
+  color: #fff;
+  font-size: 50px;
 }
 
 .trybewarts-header-logo {
@@ -23,14 +32,22 @@
 .trybewarts-login {
   display: flex;
   align-items: center;
-}
-
-.main-container {
-  background-color: blue;
+  margin-right: 16px;
 }
 
 .flex-container {
   display: flex;
+  padding-top: 10px;
+}
+
+.flex-container-column {
+  display: flex;
+  padding-top: 10px;
+  flex-direction: column;
+}
+
+#family {
+  width: 55%;
 }
 
 #evaluation-form {
@@ -44,4 +61,98 @@
 
 #form-data {
   display: none;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  max-height: 150px; 
+}
+
+/* Estilos para o container principal */
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  margin-top: 1.5%;
+}
+
+/* Estilos para o formulário */
+#evaluation-form {
+  background-color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  color: #fff;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Estilos para os campos de entrada e seleção */
+.flex-container > div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+/* Estilos para as labels */
+label {
+  font-weight: bold;
+  color: #ddd;
+}
+
+/* Estilos para os checkboxes e radio buttons */
+input[type="checkbox"],
+input[type="radio"] {
+  margin-right: 5px;
+}
+
+/* Estilos para o textarea */
+.textarea {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Estilos para o contador de caracteres */
+#counter {
+  display: block;
+  margin-top: 5px;
+  color: #fff;
+}
+
+/* Estilos para o botão de envio */
+#submit-btn {
+  background-color: #941bb3;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#textarea {
+  width: 100%;
+  max-height: 100px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  resize: vertical;
+}
+
+#counter {
+  font-size: 12px;
+  text-align: right;
+}
+
+#form-data {
+  color: #fff;
 }
